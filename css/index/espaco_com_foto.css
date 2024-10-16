@@ -1,0 +1,39 @@
+.espaco_com_foto{
+    background-image:
+        linear-gradient(
+            to top right,
+            purple,
+            tomato
+        ),
+        url("/imagens/dog-3277416_1280.jpg");
+    background-blend-mode: lighten;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bg{
+    margin: 0;
+    padding: 0;
+    fill: #fff;
+    width: 100%;
+    
+}
+
+@media (max-width: 768px) {
+
+    .espaco_com_foto{
+        width: 100%;
+        background-image:
+            linear-gradient(
+                to top right,
+                purple,
+                tomato
+            ),
+            url("/imagens/dog-3277416_1280.jpg");
+        background-blend-mode: lighten;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-attachment: local;
+        
+    }
+}
