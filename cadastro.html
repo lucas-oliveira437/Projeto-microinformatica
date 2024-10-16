@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  MiAu - Spa de patinhas.cadastro</title>
+    <!-- Página da Luciana -->  
+    <link rel="icon" href="/imagens/patinha coração.png" type="image/x-icon" sizes="32px">
+    
+
+    <!--
+    Objetico: Simular o cadastro de um cliente ou usuário, utilizando a integração com API ViaCEP para preencher o endereço.
+    Conteudo sugerido:
+    >Formulario com campos como Nome, Email, CEP (para buscar automaticamente o endereço),Endereço, Número, Bairro, Cidade, Estado.
+    >Utilização da API ViaCEP para preencher automaticamente os campos de endereço após inserir o CEP.
+    -->
+    </head>
+    <body>
+        <input type="button" value="Menu">
+        <h1>Vamos nos conhecer MiAulhor?</h1>
+    <h3>Que tal me contar um pouquinho sobre você e seu pet?</h3>
+    
+    <label for="fullname">Nome completo:</label>
+        <br> <i style="color: darkgrey;">Apenas para cadastro, por gentileza, informe seu nome em documento (não será divulgado): </i ><br>
+        <input type="text" id="fullname" name="fname" value="Nome completo" size="50px" style="color: darkgrey;"><br>
+        <br>
+
+        <label for="socialname">Nome social:</label>
+        <br> <i style="color: darkgrey;">Por gentileza, informe como gostaria de ser chamadx: </i ><br>
+        <input type="text" id="socialname" name="fname" value="" size="50px" style="color: darkgrey;"><br>
+        <br>
+
+        <label for="date">Data de nascimento:</label><br>
+        <input type="date" id="date" name="data" value=""><br>
+        <br>
+
+        <label for="gender">Gênero:</label>
+        <br> <i style="color: darkgrey;">Por gentileza, informe como você se identifica </i ><br>
+        <input type="radio" id="Feminino" name="gender" value="Feminino">
+        <label for="text">Feminino</label><br> 
+        <input type="radio" id="Masculino" name="gender" value="Masculino">
+        <label for="text">Masculino</label><br> 
+        <input type="radio" id="Neutro" name="gender" value="Neutro">
+        <label for="text">Neutro</label><br> 
+        <input type="radio" id="Neutro" name="gender" value="Prefiro não responder">
+        <label for="text">Prefiro não responder</label><br> 
+ <hr>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="e-mail" value="Digite seu endereço de e-mail" size="50px" style="color: darkgrey;"><br>
+        <br>
+
+        <label for="email">Confirme seu e-mail:</label><br>
+        <input type="email" id="email" name="e-mail" value="Digite seu endereço de e-mail" size="50px" style="color: darkgrey;"><br>
+        <br>
+  
+        <label for="password">Senha:</label><br>
+        <i style="color: darkgrey;">Por gentileza, siga os requisitos à seguir: </i ><br>
+            <ul>
+                <li style="color: darkgrey;">Letra maiúscula</li>
+                <li style="color: darkgrey;">Letra minúscula</li>
+                <li style="color: darkgrey;">Número</li>
+                <li style="color: darkgrey;">Caracter especial ( ! @ # $ . ,)</li>
+                <li style="color: darkgrey;">Mínimo de 8 caracteres</li>
+            </ul>
+        <input type="password" id="password" name="passworD" value="Digite sua senha" size="50px" style="color: darkgrey;"><br>
+        <br>
+  <hr>
+  
+  <h3><img src="/imagens/doguinho.png" height="20px"> Agora, a sua localizaCão</h3>
+        <label for="ViaCEP">CEP:</label><br>
+        <input type="cep" id="cep" name="cep" maxlength="8" value="00000-000" size="50px" style="color: darkgrey;"><br>
+        <input type="button" value="Buscar"><br>
+        <br>
+        <label for="Endereço">Endereço:</label><br>
+        <input type="endereco" id="endereco" name="endereco" value="Elm Street" size="50px" style="color: darkgrey;"><br>
+        <br>
+        <label for="Número">Número:</label><br>
+        <input type="numero" id="numero" name="numero" value="1234" size="50px" style="color: darkgrey;"><br>
+        <br>
+        <label for="text">Complemento:</label><br>
+        <input type="complemento" id="complemento" name="complemento" value="Bloco 3 apt 222" size="50px" style="color: darkgrey;"><br>
+        <br>
+        <label for="bairro">Bairro:</label><br>
+        <input type="bairro" id="bairro" name="bairro" value="Vila Boa Vista" size="50px" style="color: darkgrey;"><br>
+        <br>
+        <label for="Cidade">Cidade:</label><br>
+        <input type="cidade" id="cidade" name="cidade" value="Barueri" size="50px" style="color: darkgrey;"><br>
+        <br>
+        <label for="Estado">Estado:</label><br>
+        <input type="estado" id="estado" name="estado" value="São Paulo" size="50px" style="color: darkgrey;"><br>
+        <br>
+        
+
+        <hr>
+        <label for="checkbox">Interesses</label>
+        <br> <i style="color: darkgrey;">Por gentileza, selecione quais serviços tem interesse em nosso site: </i ><br>
+        <input type="checkbox" id="servico1" name="" value="">
+        <label for="servico1"> Banho</label><br>
+        <input type="checkbox" id="servico2" name="" value="">
+        <label for="servico2"> Tosa Higiênica</label><br>
+        <input type="checkbox" id="servico3" name="" value="">
+        <label for="servico3"> Tosa Completa</label><br>
+        <input type="checkbox" id="servico4" name="" value="">
+        <label for="servico4"> Hotelzinho</label><br>
+        <input type="checkbox" id="servico5" name="" value="">
+        <label for="servico5"> Pet Walk</label><br>
+        <input type="checkbox" id="servico6" name="" value="">
+        <label for="servico6"> Consulta</label><br>
+        <input type="checkbox" id="servico7" name="" value="">
+        <label for="servico7"> Pet Shop</label><br>
+        <hr>
+        <br>
+        <input type="submit" value="Submit">
+        </form>
+
+    
+</body>
+</html>
