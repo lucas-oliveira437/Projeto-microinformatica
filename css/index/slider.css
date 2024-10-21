@@ -1,7 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&display=swap');
+.spa_de_patinhas{
+    margin-top: 3vh;
+   text-align: center;
+   color:#23232e;
+   font-family: "Pacifico";
+   font-size: 310%;
+}
+
 div.slider{
     margin: 0 auto;
     margin-top: 30px;
-    width: 50%;
+    width: 38%;
     height: auto;
     padding: 0 !important;
     overflow: hidden;
@@ -39,9 +48,9 @@ div.slider{
 
 .nav-manual, .nav-auto{
     position: absolute;
-    width: 50%;
+    width: 38%;
     /*margin-top: 35%;*/
-    margin-top: 35%;
+    margin-top: 26%;
     margin-bottom: 35%;
     display: flex;
     justify-content: center;
@@ -49,6 +58,7 @@ div.slider{
 }
 
 .nav-manual .manual-btn, .nav-auto div{
+    margin-top: 8px;
     border: 1px solid #12c6e0;
     padding: 10px;
     border-radius: 50%;
@@ -85,4 +95,30 @@ div.slider{
 
 #radio3:checked ~ .primeiro{
     margin-left: -50%;
+}
+
+
+@media (max-width: 768px) {
+    .spa_de_patinhas{
+        margin-top: 4vh;
+        font-size: 250%;
+    }
+
+    .nav-manual .manual-btn, .nav-auto div{
+        margin-top: 8px;
+        padding: 5px;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px){
+    .spa_de_patinhas{
+        margin-top: 8vh;
+        font-size: 290%;
+    }
+
+    .nav-manual .manual-btn, .nav-auto div{
+        margin-top: 8px;
+        padding: 8px;
+    }
 }
