@@ -8,30 +8,83 @@
     <link rel="stylesheet" href="/css//standard/menu.css">
     <link rel="stylesheet" href="/css//standard/footer.css">
     <link rel="stylesheet" href="/css//index/espaco_com_foto.css">
+    <link rel="stylesheet" href="/css//index/slider.css">
     <script src=""></script>
     <title>Pet Shop</title>
 </head>
 
 <body>
+    <!--Início do cabeçalho-->
     <header>
         <nav class="nav-header">
-            <a href="/" class="logo">Logo Pet Shop</a>
+            <div id="logo">
+                <a href="/index.html" class="logo">MiAu</a>
+                <!--<p>Spa de patinhas</p>-->
+            </div>
             <div class="mobile-menu">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
             <ul class="nav-list">
-                <li><i class="fa-solid fa-address-card fa-2xl" style="color: #FFD43B;"></i><a href="">Sobre</a></li>
-                <li><i class="fa-solid fa-shield-dog fa-2xl" style="color: #FFD43B;"></i><a href="">Cães</a></li>
-                <li><i class="fa-solid fa-shield-cat fa-2xl" style="color: #FFD43B;"></i><a href="">Gatos</a></li>
-                <li><i class="fa-solid fa-image fa-2xl" style="color: #FFD43B;"></i><a href="">Galeria</a></li>
-                <li><i class="fa-solid fa-table fa-2xl" style="color: #FFD43B;"></i><a href="">Formulário</a></li>
-                <li><i class="fa-solid fa-address-book fa-2xl" style="color: #FFD43B;"></i><a href="">Contato</a></li>
+                <li><i class="fa-solid fa-address-card fa-2xl" style="color: #FFD43B;"></i><a href="/sobre.html">Sobre</a></li>
+                <li><i class="fa-solid fa-shield-dog fa-2xl" style="color: #FFD43B;"></i><a href="#">Cães</a></li>
+                <li><i class="fa-solid fa-shield-cat fa-2xl" style="color: #FFD43B;"></i><a href="#">Gatos</a></li>
+                <li><i class="fa-solid fa-image fa-2xl" style="color: #FFD43B;"></i><a href="/galeria.html">Galeria</a></li>
+                <li><i class="fa-solid fa-table fa-2xl" style="color: #FFD43B;"></i><a href="/cadastro.html">Cadastro</a></li>
+                <li><i class="fa-solid fa-address-book fa-2xl" style="color: #FFD43B;"></i><a href="/contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
+    <!--Fmi do cabeçalho-->
     <br><br><br><br>
+    <section>
+        <div class="slider">
+            <div class="slider-content">
+                <input type="radio" name="btn-radio" id="radio1">
+                <input type="radio" name="btn-radio" id="radio2">
+                <input type="radio" name="btn-radio" id="radio3">
+                <input type="radio" name="btn-radio" id="radio4">
+    
+                <div class="slide-box primeiro">
+                    <img class="img-desktop" src="/imagens/index/dog-3277416_1280.jpg" alt="slide 1">
+                    <img class="img-mobile" src="/imagens/banners/dog-3277416_1280.jpg" alt="slide 1">
+                </div>
+                <div class="slide-box ">
+                    <img class="img-desktop" src="/imagens/index/kitten-4611189_1280.jpg" alt="slide 1">
+                    <img class="img-mobile" src="/imagens/banners/kitten-4611189_1280.jpg" alt="slide 1">
+                </div>
+                <div class="slide-box ">
+                    <img class="img-desktop" src="/imagens/index/pet-6877246_1280.jpg" alt="slide 1">
+                    <img class="img-mobile" src="/imagens/banners/pet-6877246_1280.jpg" alt="slide 1">
+                </div>
+                <div class="slide-box ">
+                    <img class="img-desktop" src="/imagens/index/puppy-1047521_1280.jpg" alt="slide 1">
+                    <img class="img-mobile" src="/imagens/banners/puppy-1047521_1280.jpg" alt="slide 1">
+                </div>
+    
+                <div class="nav-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+    
+                <div class="nav-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
+    
+            </div>
+        </div>
+
+    </section>
+    <!--Slider-->
+    
+    
+    <!--Fim Slider-->
+
+
 
     <div class="caixa"></div>
     <div class="caixa"></div>
@@ -77,12 +130,12 @@
     <div class="caixa"></div>
     <div class="caixa"></div>
     <div class="caixa"></div>
-
+<!--Início do footer-->
     <footer>
         <div id="footer_content">
             <div id="footer_contacts">
-                <h1>Logo</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h1>MiAu</h1>
+                <p>Spa de patinhas.</p>
 
                 <div id="footer_social_media">
                     <a href="" class="footer-link" id="instagram">
@@ -99,38 +152,38 @@
 
             <ul class="footer-list">
                 <li>
-                    <h3>Blog</h3>
+                    <h3>Nos conheça</h3>
                 </li>
                 <li>
-                    <a href="#" class="footer-link">Tech</a>
+                    <a href="/sobre.html" class="footer-link">Sobre</a>
                 </li>
                 <li>
-                    <a href="#" class="footer-link">Adventure</a>
+                    <a href="/galeria.html" class="footer-link">Galeria</a>
                 </li>
                 <li>
-                    <a href="#" class="footer-link">Music</a>
+                    <a href="/contato.html" class="footer-link">Contato</a>
                 </li>
             </ul>
 
             <ul class="footer-list">
                 <li>
-                    <h3>Products</h3>
+                    <h3>Produtos</h3>
                 </li>
                 <li>
-                    <a href="#" class="footer-link">App</a>
+                    <a href="#" class="footer-link">Cães</a>
                 </li>
                 <li>
-                    <a href="#" class="footer-link">Desktop</a>
+                    <a href="#" class="footer-link">Gatos</a>
                 </li>
                 <li>
-                    <a href="#" class="footer-link">Cloud</a>
+                    <a href="/cadastro.html" class="footer-link">Cadastro</a>
                 </li>
             </ul>
 
             <div id="footer_subscribe">
-                <h3>Subscribe</h3>
+                <h3>Increva-se</h3>
 
-                <p>Enter your e-mail to get notified about our news solutions</p>
+                <p>Digite o seu e-mail para receber novidades da MiAu:</p>
 
                 <div id="input_group">
                     <input type="email" name="" id="email">
@@ -145,8 +198,12 @@
             2024 all rights reserved
         </div>
     </footer>
+<!--Fim do footer-->
+<!--Início dos scripts necessários-->
     <script src="/scripts/standard/mobile-navbar.js"></script>
     <script src="https://kit.fontawesome.com/4c85b95dc0.js" crossorigin="anonymous"></script>
+    <script src="/scripts/standard/slider.js"></script>
+<!--Fim dos scripts necessários-->
 </body>
 
 </html>

@@ -1,21 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&display=swap');
 * {
     margin: 0;
     padding: 0;
 }
 
+body{
+    background-color: #F6FF9E;
+}
+
+
+
 header nav a {
     color: #fff;
     text-decoration: none;
+    transition: 0.4s;
 }
 
 header nav a:hover {
     opacity: 0.7;
+    color: #F6FF9E;
 }
 
-.logo {
-    font-size: 24px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
+#logo a{
+    font-size: 30px;
+    /*text-transform: uppercase;*/
+    letter-spacing: 2px;
+    font-family: "Pacifico";
 }
 
 header{
@@ -27,7 +38,7 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: system-ui, system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
     background: #23232e;
     height: 12vh;
 }
@@ -35,7 +46,7 @@ header{
 .caixa {
     width: 100px;
     height: 100px;
-    background-color: red;
+    background-color: #F6FF9E;
 }
 
 .nav-list {
