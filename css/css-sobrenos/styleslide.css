@@ -9,34 +9,34 @@ div {
 }
 
 .pagina:nth-child(1) {
-    background-image: url('/imagemslide/cachorro1.png');
+    background-image: url('/imagens/imagemslide/cachorro1.png');
 }
 .pagina:nth-child(2) {
-    background-image: url('/imagemslide/gato.png');
+    background-image: url('/imagens/imagemslide/gato.png');
 }
 .pagina:nth-child(3) {
-    background-image: url('/imagemslide/cachorro2.png');
+    background-image: url('/imagens/imagemslide/cachorro2.png');
 }
 .pagina:nth-child(4) {
-    background-image: url('/imagemslide/gatos.png');
+    background-image: url('/imagens/imagemslide/gatos.png');
 }
 .pagina:nth-child(5) {
-    background-image: url('/imagemslide/gato1.png');
+    background-image: url('/imagens/imagemslide/gato1.png');
 }
 .pagina:nth-child(6) {
-    background-image: url('/imagemslide/cachorro3.png');
+    background-image: url('/imagens/imagemslide/cachorro3.png');
 }
 .pagina:nth-child(7) {
-    background-image: url('/imagemslide/cachorros.png');
+    background-image: url('/imagens/imagemslide/cachorros.png');
 }
 .pagina:nth-child(8) {
-    background-image: url('/imagemslide/gato2.png');
+    background-image: url('/imagens/imagemslide/gato2.png');
 }
 .pagina:nth-child(9) {
-    background-image: url('/imagemslide/gatos1.png');
+    background-image: url('/imagens/imagemslide/gatos1.png');
 }
 .pagina:nth-child(10) {
-    background-image: url('/imagemslide/cachorro4.png');
+    background-image: url('/imagens/imagemslide/cachorro4.png');
 }
 
 .slide {
