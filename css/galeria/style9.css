@@ -1,0 +1,131 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Faixa do letreiro com efeito orgânico */
+.ticker-content {
+    display: flex;
+    animation: scroll-left 60s linear infinite; /* Aumento do tempo para uma animação mais lenta */
+}
+
+.ticker-content img {
+    height: 70px;
+    margin-top: 70px;
+    margin-right: 1px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #f0ee9c; /* Borda arredondada */
+}
+
+/* Animação de movimento para o letreiro */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Botões de filtro com imagens para selecionar entre cães e gatos */
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.filter-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 0 15px;
+    padding: 10px;
+    transition: transform 0.3s ease-in-out, border 0.3s ease-in-out; /* Transição suave para o efeito de hover */
+}
+
+.filter-btn img {
+    width: 200px; /* Aumentamos a imagem para destacá-la mais */
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%; /* Deixa a borda arredondada */
+    border: 5px solid #fff; /* Borda branca ao redor da imagem */
+    transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+/* Efeito hover nas imagens dos botões */
+.filter-btn:hover img {
+    transform: scale(1.2); /* Aumenta a imagem ao passar o mouse */
+    border: 5px solid #003366; /* Borda azul marinho no hover */
+}
+
+/* Efeito visual quando o botão é selecionado */
+.filter-btn.active img {
+    border: 5px solid #ffb6c1; /* Cor de borda diferente quando o botão é ativo */
+}
+
+/* Adicionando um efeito de foco para quando o botão estiver em foco */
+.filter-btn:focus img {
+    box-shadow: 0 0 0 4px rgba(255, 182, 193, 0.6); /* Sombra suave ao focar no botão */
+}
+
+/* Galeria de fotos com bordas suaves e efeitos orgânicos */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery-item {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    display: block;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 5px solid #ffb6c1; /* Borda inferior rosa clarinho */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.gallery-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Efeito hover nas imagens da galeria */
+.gallery-item img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Responsividade para dispositivos menores */
+@media screen and (max-width: 768px) {
+    .filter-btn img {
+        width: 150px; /* Reduz a imagem nos dispositivos móveis */
+        height: 150px;
+    }
+    
+    .gallery-item img {
+        height: 200px; /* Ajusta a altura das imagens na galeria */
+    }
+
+    .gallery {
+        padding: 10px;
+    }
+
+    .ticker-content img {
+        height: 50px; /* Ajusta o tamanho das imagens do letreiro em dispositivos pequenos */
+    }
+}
