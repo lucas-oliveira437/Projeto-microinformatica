@@ -5,37 +5,20 @@
     box-sizing: border-box;
 }
 
-/* Corpo e fundo com gradientes orgânicos */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    padding: 0;
-    margin: 0;
-}
 
 /* Faixa do letreiro com efeito orgânico */
-.ticker {
-    width: 100%;
-    /*background: linear-gradient(135deg, #003366, #ffb6c1); /* Azul marinho e rosa clarinho */
-    color: #fff;
-    overflow: hidden;
-    padding: 90px 0;
-    position: relative;
-    clip-path: ellipse(70% 50% at 50% 50%); /* Forma orgânica para o fundo */
-}
-
 .ticker-content {
     display: flex;
-    animation: scroll-left 40s linear infinite; /* Aumento o tempo para uma animação mais lenta */
+    animation: scroll-left 60s linear infinite; /* Aumento do tempo para uma animação mais lenta */
 }
 
 .ticker-content img {
     height: 60px;
+    margin-top: 60px;
     margin-right: 1px;
     object-fit: cover;
     border-radius: 10px;
-    border: 2px solid #fff; /* Borda arredondada */
+    border: 2px solid #f0ee9c; /* Borda arredondada */
 }
 
 /* Animação de movimento para o letreiro */
@@ -46,12 +29,6 @@ body {
     100% {
         transform: translateX(-100%);
     }
-}
-
-
-h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
 }
 
 /* Botões de filtro com imagens para selecionar entre cães e gatos */
@@ -133,3 +110,22 @@ h1 {
     transition: transform 0.3s ease-in-out;
 }
 
+/* Responsividade para dispositivos menores */
+@media screen and (max-width: 768px) {
+    .filter-btn img {
+        width: 150px; /* Reduz a imagem nos dispositivos móveis */
+        height: 150px;
+    }
+    
+    .gallery-item img {
+        height: 200px; /* Ajusta a altura das imagens na galeria */
+    }
+
+    .gallery {
+        padding: 10px;
+    }
+
+    .ticker-content img {
+        height: 50px; /* Ajusta o tamanho das imagens do letreiro em dispositivos pequenos */
+    }
+}
