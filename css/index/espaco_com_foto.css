@@ -9,6 +9,7 @@
     background-blend-mode: lighten;
     background-size: cover;
     background-attachment: fixed;
+    height: 150vh;
 }
 
 .bg{
@@ -29,11 +30,30 @@
                 purple,
                 tomato
             ),
-            url("/imagens/dog-3277416_1280.jpg");
+            url("/imagens/index/dog-3277416_1280.jpg");
         background-blend-mode: lighten;
         background-size: contain;
         background-repeat: no-repeat;
         background-attachment: local;
         
+    }
+
+    .bg{
+        margin: 0;
+        padding: 0;
+        fill: #F6FF9E;
+        width: 100%;
+        padding-bottom: 96.5px;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px){
+    .bg{
+        margin: 0;
+        padding: 0;
+        fill: #F6FF9E;
+        width: 100%;
+        padding-bottom: 14vh;
     }
 }

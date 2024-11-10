@@ -43,11 +43,7 @@ header{
     height: 12vh;
 }
 
-.caixa {
-    width: 100px;
-    height: 100px;
-    background-color: #F6FF9E;
-}
+
 
 .nav-list {
     list-style: none;

@@ -59,7 +59,7 @@ div.slider{
 
 .nav-manual .manual-btn, .nav-auto div{
     margin-top: 8px;
-    border: 1px solid #12c6e0;
+    border: 1px solid #23232e;
     padding: 10px;
     border-radius: 50%;
     cursor: pointer;
@@ -71,17 +71,17 @@ div.slider{
 }
 
 .nav-manual .manual-btn:hover{
-    background-color: #12c6e0;
+    background-color: #23232e;
 }
 
 #radio1:checked ~ .nav-auto .auto-btn1{
-    background-color: #12c6e0;
+    background-color: #23232e;
 }
 #radio2:checked ~ .nav-auto .auto-btn2{
-    background-color: #12c6e0;
+    background-color: #23232e;
 }
 #radio3:checked ~ .nav-auto .auto-btn3{
-    background-color: #12c6e0;
+    background-color: #23232e;
 }
 
 

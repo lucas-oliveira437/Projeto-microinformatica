@@ -1,0 +1,41 @@
+.efeito_content{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: -1;
+}
+
+.efeito_content h3{
+    text-align: center;
+    color: #23232e;
+    font-size: 400%;
+    
+}
+
+.efeito_content p{
+    font-size: 200%;
+    color: #23232e;
+  
+}
+
+.efeito_content img{
+    width: 50%;
+    z-index: -5;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 2s;
+}
