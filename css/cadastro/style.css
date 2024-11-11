@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&display=swap');
+
+/* Reset de Margem e Padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* Cor de fundo da página */
+body {
+    margin-top: 50;
+    background-color: #F6FF9E;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    padding-top: 100px; /* Espaço para o cabeçalho fixo */
+    background-color: #F6FF9E;
+    
+}
+h1, h2, h3, h4, h5, h6{
+    text-align: center;
+}
+
+/* Estilo para o Formulário */
+form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f1ef3f;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Open Sans', sans-serif;
+}
+
+form h1, form h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Pacifico', cursive;
+    color: #23232e;
+}
+
+form label {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    color: #23232e;
+    display: block;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form input[type="password"],
+form input[type="radio"],
+form input[type="checkbox"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 20px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 1.3rem;
+    color: #333;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+    width: auto;
+    margin: 0 10px 0 0;
+}
+
+form input[type="submit"] {
+    background-color: #FFD43B;
+    color: #fff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Open Sans', sans-serif;
+}
+
+form input[type="submit"]:hover {
+    background-color: #f2a900;
+}
+
+form hr {
+    border: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+form ul {
+    list-style-type: none;
+}
+
+form ul li {
+    font-size: .9rem;
+    color: #0c0b0b;
+}
+
+/* Estilo para as imagens */
+form img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+/* Estilo Responsivo */
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    form h1, form h3 {
+        font-size: 1.5rem;
+    }
+
+    form label {
+        font-size: 1rem;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="date"],
+    form input[type="password"],
+    form input[type="submit"] {
+        font-size: 0.9rem;
+    }
+
+    form input[type="submit"] {
+        padding: 10px 25px;
+    }
+
+    .nav-list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: #23232e;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+}
+
+

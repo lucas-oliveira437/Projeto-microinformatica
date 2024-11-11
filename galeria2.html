@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/imagens/patinha coração.png" type="image/x-icon" sizes="32px">
+    <link rel="stylesheet" href="/css//standard/menu.css">
+    <link rel="stylesheet" href="/css//standard/footer.css">
+    <link rel="stylesheet" href="/css//index/espaco_com_foto.css">
+    <link rel="stylesheet" href="/css/galeria/style9.css">
+    <title>MiAu - Spa de Patinhas | Galeria</title>
+</head>
+<body>
+    <!--
+    Obejtivo: Exibir uma lista dos clientes cadastrados ou comentários/feedback recebidos
+    Conteudo sugerido: Listar os clientes que se cadastraram no site (dados podem ser ficticios)
+    Se fr o feedback, incluir o nome do usuario e a mensagem enviada
+    Uilizar uma estrutura de tabela simples ou cards.
+    -->
+    <!--Início do cabeçalho-->
+    <header>
+        <nav class="nav-header">
+            <div id="logo">
+                <a href="/index.html" class="logo">MiAu</a>
+                <!--<p>Spa de patinhas</p>-->
+            </div>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><i class="fa-solid fa-address-card fa-2xl" style="color: #FFD43B;"></i><a href="/sobrenos.html">Sobre</a></li>
+                <li><i class="fa-solid fa-shield-dog fa-2xl" style="color: #FFD43B;"></i><a href="#">Cães</a></li>
+                <li><i class="fa-solid fa-shield-cat fa-2xl" style="color: #FFD43B;"></i><a href="#">Gatos</a></li>
+                <li><i class="fa-solid fa-image fa-2xl" style="color: #FFD43B;"></i><a href="/galeria.html">Galeria</a></li>
+                <li><i class="fa-solid fa-table fa-2xl" style="color: #FFD43B;"></i><a href="/cadastro.html">Cadastro</a></li>
+                <li><i class="fa-solid fa-address-book fa-2xl" style="color: #FFD43B;"></i><a href="/contato.html">Contato</a></li>
+            </ul>
+        </nav>
+
+        <!-- Faixa de letreiro com imagens -->
+        <section class="ticker">
+            <div class="ticker-content">
+                <img src="imagens/galeria/gato27.jpg" alt="Imagem 01">
+                <img src="imagens/galeria/gato22.jpg" alt="Imagem 02">
+                <img src="imagens/galeria/doguinho44.jpg" alt="Imagem 03">
+                <img src="imagens/galeria/gato2.jpg" alt="Imagem 04">
+                <img src="imagens/galeria/doguinho26.jpg" alt="Imagem 05">
+                <img src="imagens/letreiro/Moody4.jpg" alt="Imagem 06">
+                <img src="imagens/galeria/doguinho45.jpg" alt="Imagem 07">
+                <img src="imagens/letreiro/Rengar7.JPEG" alt="Imagem 08">
+                <img src="imagens/galeria/doguinho31.jpg" alt="Imagem 09">
+                <img src="imagens/galeria/gato26.jpg" alt="Imagem 10">
+                <img src="imagens/letreiro/Roni e Zero1.jpg" alt="Imagem 11">
+                <img src="imagens/galeria/doguinho42.jpg" alt="Imagem 12">
+                <img src="imagens/letreiro/Moody12.JPEG" alt="Imagem 13">
+                <img src="imagens/letreiro/Roni e Zero4.JPEG" alt="Imagem 14">
+                <img src="imagens/galeria/doguinho40.jpg" alt="Imagem 15">
+                <img src="imagens/letreiro/Roni16.JPEG" alt="Imagem 16">
+                <img src="imagens/galeria/doguinho41.jpg" alt="Imagem 17">
+                <img src="imagens/galeria/doguinho3.jpg" alt="Imagem 18">
+                <img src="imagens/letreiro/Roni7.JPEG" alt="Imagem 19">
+                <img src="imagens/letreiro/Roni8.JPEG" alt="Imagem 20">
+                <img src="imagens/galeria/doguinho17.jpg" alt="Imagem 21">
+                <img src="imagens/letreiro/Roni9.JPEG" alt="Imagem 22">
+                <img src="imagens/botoes/ciri1.PNG" alt="Imagem 23">
+                <img src="imagens/letreiro/Roni11.JPEG" alt="Imagem 24">
+                <img src="imagens/galeria/doguinho43.jpg" alt="Imagem 25">
+                <img src="imagens/galeria/gato21.jpg" alt="Imagem 26">
+            </div>
+        </section>
+    </header>
+             
+    
+                   
+        <!-- Links de navegação para escolher entre cães e gatos -->
+        <div class="filter-buttons">
+            
+            <button onclick="filterGallery('todos')" class="filter-btn" data-category="todos">
+                <img src="imagens/botoes/todos.jpg" alt="Todos">
+            </button>
+            <button onclick="filterGallery('cães')" class="filter-btn" data-category="cães">
+                <img src="/imagens/botoes/ciri1.PNG" alt="Cães">
+            </button>
+            <button onclick="filterGallery('gatos')" class="filter-btn" data-category="gatos">
+                <img src="/imagens/botoes/Rengar3.JPEG" alt="Gatos">
+            </button>
+            
+        </div>
+    
+        <!-- Galeria de fotos -->
+        <section class="gallery">
+            <div class="gallery-item" data-category="cães">
+                <img src="imagens/botoes/ciri1.PNG" alt="Cão 1">
+            </div>
+            <div class="gallery-item" data-category="gatos">
+                <img src="imagens/galeria/Moody e Roni1.JPEG" alt="Gato 1">
+            </div>
+            <div class="gallery-item" data-category="cães">
+                <img src="imagens/galeria/doguinho1.jpg" alt="Cão 2">
+            </div>
+            <div class="gallery-item" data-category="gatos">
+                <img src="imagens/galeria/Moody1.jpg" alt="Gato 2">
+            </div>
+            <div class="gallery-item" data-category="cães">
+                <img src="imagens/galeria/doguinho2.jpg" alt="Cão 3">
+            </div>
+            <div class="gallery-item" data-category="gatos">
+            <img src="imagens/galeria/Roni1.jpg" alt="Gato 3">
+            </div>
+            <div class="gallery-item" data-category="cães">
+                <img src="imagens/galeria/doguinho3.jpg" alt="Cão 4">
+            </div>
+            <div class="gallery-item" data-category="gatos">
+                <img src="imagens/galeria/Rengar5.JPEG" alt="Gato 4">
+            </div>
+            <div class="gallery-item" data-category="cães">
+
+
+        </section>
+        <!--Início do footer-->
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <h1>MiAu</h1>
+                <p>Spa de patinhas.</p>
+
+                <div id="footer_social_media">
+                    <a href="" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Nos conheça</h3>
+                </li>
+                <li>
+                    <a href="/sobre.html" class="footer-link">Sobre</a>
+                </li>
+                <li>
+                    <a href="/galeria.html" class="footer-link">Galeria</a>
+                </li>
+                <li>
+                    <a href="/contato.html" class="footer-link">Contato</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Produtos</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Cães</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Gatos</a>
+                </li>
+                <li>
+                    <a href="/cadastro.html" class="footer-link">Cadastro</a>
+                </li>
+            </ul>
+
+            <div id="footer_subscribe">
+                <h3>Increva-se</h3>
+
+                <p>Digite o seu e-mail para receber novidades da MiAu:</p>
+
+                <div id="input_group">
+                    <input type="email" name="" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="footer_copyrigth">
+            &#169
+            2024 all rights reserved
+        </div>
+    </footer>
+<!--Fim do footer-->
+<!--Inicio dos scripts necessários -->    
+        <script src="/javascript/script.js"></script>
+</body>
+</html>

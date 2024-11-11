@@ -1,5 +1,3 @@
-
-
 // Filtro de Galeria
 function filterGallery(category) {
     // Seleciona todos os itens da galeria e botões de filtro
@@ -25,15 +23,18 @@ function filterGallery(category) {
 let currentImageIndex = 0;
 const images = document.querySelectorAll('.gallery-item img');
 
+// Abre o modal com a imagem clicada
 function openModal(index) {
-    document.getElementById("imageModal").style.display = "block";
+    document.getElementById("imageModal").style.display = "flex";
     showImage(index);
 }
 
+// Fecha o modal
 function closeModal() {
     document.getElementById("imageModal").style.display = "none";
 }
 
+// Exibe a imagem no modal
 function showImage(index) {
     const modalImage = document.getElementById("modalImage");
     const modalCaption = document.getElementById("modalCaption");
@@ -48,46 +49,47 @@ function showImage(index) {
     modalCaption.textContent = images[currentImageIndex].alt;
 }
 
+// Navega para a imagem anterior ou próxima
 function changeImage(step) {
     showImage(currentImageIndex + step);
 }
-let currentIndex = 0;
-const images2 = document.querySelectorAll(".thumbnail");
-const modal = document.getElementById("modal");
-const modalImage = document.getElementById("modalImage");
-const prevButton = document.getElementById("prev");
-const nextButton = document.getElementById("next");
-const closeButton = document.getElementById("close");
 
-// Quando uma imagem é clicada, abre no modal
-images2.forEach((img, index) => {
+// Abrir o modal quando clicar em qualquer imagem da galeria
+images.forEach((img, index) => {
     img.onclick = function() {
-        currentIndex = index;
-        modal.style.display = "block";
-        modalImage.src = img.src;
+        currentImageIndex = index;
+        openModal(currentImageIndex);
     };
 });
 
-// Fechar o modal
-closeButton.onclick = function() {
-    modal.style.display = "none";
+// Fechar o modal ao clicar no botão de fechar
+document.getElementById("close").onclick = function() {
+    closeModal();
 };
 
 // Navegar para a imagem anterior
-prevButton.onclick = function() {
-    currentIndex = (currentIndex === 0) ? images2.length - 1 : currentIndex - 1;
-    modalImage.src = images2[currentIndex].src;
+document.getElementById("prev").onclick = function() {
+    changeImage(-1);
 };
 
 // Navegar para a próxima imagem
-nextButton.onclick = function() {
-    currentIndex = (currentIndex === images2.length - 1) ? 0 : currentIndex + 1;
-    modalImage.src = images2[currentIndex].src;
+document.getElementById("next").onclick = function() {
+    changeImage(1);
 };
 
 // Fechar o modal ao clicar fora da imagem
 window.onclick = function(event) {
+    const modal = document.getElementById("imageModal");
     if (event.target === modal) {
-        modal.style.display = "none";
+        closeModal();
     }
 };
+
+// Adicionando funcionalidade de fechar ao clicar fora da imagem
+const modal = document.getElementById("imageModal");
+modal.addEventListener("click", function(event) {
+    // Se o clique for fora da imagem, fecha o modal
+    if (event.target === modal) {
+        closeModal();
+    }
+});
