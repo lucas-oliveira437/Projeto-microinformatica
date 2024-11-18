@@ -38,7 +38,7 @@ div.slider{
     position: relative;
     text-align: center;
     transition: 1s;
-    z-index: -1;
+    
 }
 
 .slide-box img{
@@ -54,7 +54,7 @@ div.slider{
     margin-bottom: 35%;
     display: flex;
     justify-content: center;
-    z-index: -1;
+    
 }
 
 .nav-manual .manual-btn, .nav-auto div{

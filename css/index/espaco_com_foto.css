@@ -1,4 +1,11 @@
 .espaco_com_foto{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     background-image:
         linear-gradient(
             to top right,
@@ -9,19 +16,18 @@
     background-blend-mode: lighten;
     background-size: cover;
     background-attachment: fixed;
-    height: 150vh;
+
 }
 
 .bg{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     fill: #F6FF9E;
     width: 100%;
-    
 }
 
 @media (max-width: 768px) {
-
     .espaco_com_foto{
         width: 100%;
         background-image:
@@ -29,31 +35,29 @@
                 to top right,
                 purple,
                 tomato
-            ),
-            url("/imagens/index/dog-3277416_1280.jpg");
-        background-blend-mode: lighten;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-attachment: local;
-        
-    }
-
-    .bg{
-        margin: 0;
-        padding: 0;
-        fill: #F6FF9E;
-        width: 100%;
-        padding-bottom: 96.5px;
+            );
     }
 }
 
-
 @media (min-width: 769px) and (max-width: 1024px){
-    .bg{
+    
+    .espaco_com_foto{
         margin: 0;
         padding: 0;
-        fill: #F6FF9E;
-        width: 100%;
-        padding-bottom: 14vh;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background-image:
+            linear-gradient(
+                to top right,
+                purple,
+                tomato
+            ),
+            url("/imagens/index/kitten-4611189_1280.jpg");
+        background-blend-mode: lighten;
+        background-size: cover;
+        background-attachment: fixed;
     }
 }

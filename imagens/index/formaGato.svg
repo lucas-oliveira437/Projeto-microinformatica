@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="254.16319"
+   height="241.56732"
+   viewBox="0 0 67.247343 63.914688"
+   version="1.1"
+   id="svg1"
+   xml:space="preserve"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+     id="defs1"><clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath6"><path
+         d="m 179.06142,5.1144165 c -8.24806,-0.2431951 -10.96066,11.1157675 -17.09094,8.7472695 -5.00906,-1.9353 -13.15627,4.656504 -18.03921,11.202934 -3.9386,5.280374 -5.85815,11.877677 -3.7977,17.469218 1.84276,5.000802 9.09456,5.779824 12.72222,9.684163 4.42139,4.758608 3.0963,13.087685 10.63346,16.329753 8.11721,3.491576 12.45471,-13.12067 21.07726,-18.798336 5.18653,-3.415161 14.35286,3.37245 18.98799,-0.949296 3.87014,-3.608484 3.37197,-10.677969 1.89911,-15.760278 C 203.97602,27.941198 198.8424,24.729535 195.38962,20.697445 190.98525,15.554108 192.21727,8.7875265 181.80854,5.5903564 180.8269,5.2888345 179.91467,5.1395746 179.06142,5.1144165 Z"
+         id="path6" /></clipPath><image
+       width="89.160248"
+       height="65.808014"
+       preserveAspectRatio="none"
+       xlink:href="htmlProjeto/Projeto-microinformatica/imagens/index/kitten-4611189_1280.jpg"
+       id="image1"
+       x="131.42081"
+       y="4.1501889" /></defs><g
+     id="layer1"
+     transform="translate(-139.86544,-9.8576411)"><use
+       x="0"
+       y="0"
+       xlink:href="#image1"
+       clip-path="url(#clipPath6)"
+       transform="translate(0.56964807,4.7470776)"
+       id="use6" /></g></svg>

@@ -1,5 +1,30 @@
 .efeito_content{
-    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 30px;
+    position: relative;
+    z-index: -1;
+    margin-bottom: 50px;
+}
+
+.container-texto-esquerda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+
+.container-texto-direita{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+
+.meio{
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,22 +33,72 @@
     z-index: -1;
 }
 
+.direita{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    margin-right: 30px;
+    position: relative;
+    z-index: -1;
+}
+
 .efeito_content h3{
-    text-align: center;
     color: #23232e;
     font-size: 400%;
-    
 }
 
 .efeito_content p{
     font-size: 200%;
     color: #23232e;
-  
+    font-family: "Pacifico";
 }
 
 .efeito_content img{
-    width: 50%;
+    width: 40%;
     z-index: -5;
+    border-radius: 10%;
+}
+
+.container-espaco-marcas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-espaco-marcas h3{
+    margin-top: 80px;
+    color: #23232e;
+    font-size: 400%;
+    font-family: "Pacifico";
+}
+
+.container-nome-marcas{
+    margin-top: 80px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-nome-marca-logo{
+    width: 33%;
+    display: flex;
+    justify-content: center;
+}
+
+#pedigree{
+    width: 70%;
+}
+
+#whiskas{
+    width: 70%;
+    border-radius: 60%;
+}
+
+#dogchow{
+    width: 70%;
 }
 
 .hidden {
@@ -38,4 +113,110 @@
     filter: blur(0);
     transform: translateX(0);
     transition: all 2s;
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+    .efeito_content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0px;
+        position: relative;
+        z-index: -1;
+    }
+
+    .efeito_content h3{
+        color: #23232e;
+        font-size: 300%;
+    }
+    
+    .efeito_content p{
+        font-size: 150%;
+        color: #23232e;
+        font-family: "Pacifico";
+    }
+    
+    .efeito_content img{
+        width: 50%;
+        z-index: -5;
+        border-radius: 10%;
+    }
+
+    .direita{
+        margin-right: 0px;
+    }
+
+    .container-espaco-marcas h3{
+        margin-top: 80px;
+        color: #23232e;
+        font-size: 280%;
+        font-family: "Pacifico";
+    }
+
+    .container-nome-marca-logo{
+        width: 33%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #pedigree{
+        width: 60%;
+    }
+    
+    #whiskas{
+        width: 60%;
+        border-radius: 60%;
+    }
+    
+    #dogchow{
+        width: 60%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .efeito_content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0px;
+        position: relative;
+        z-index: -1;
+    }
+
+    .container-texto-esquerda{
+        width: 100%;
+    }
+
+    .container-texto-direita{
+        width: 100%;
+    }
+
+    .efeito_content h3{
+        color: #23232e;
+        font-size: 200%;
+    }
+    
+    .efeito_content p{
+        font-size: 150%;
+        color: #23232e;
+        font-family: "Pacifico";
+    }
+    
+    .efeito_content img{
+        width: 40%;
+        z-index: -5;
+        border-radius: 10%;
+    }
+
+    .direita{
+        margin-right: 0px;
+    }
+
+    .container-espaco-marcas h3{
+        font-size: 200%;
+        text-align: center;
+    }
 }

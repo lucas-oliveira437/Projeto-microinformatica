@@ -9,8 +9,6 @@ body{
     background-color: #F6FF9E;
 }
 
-
-
 header nav a {
     color: #fff;
     text-decoration: none;
@@ -32,6 +30,7 @@ header nav a:hover {
 header{
     width: 100%;
     position: fixed;
+    z-index: 10;
 }
 
 .nav-header {
@@ -95,11 +94,11 @@ header{
         top: 8vh;
         right: 0;
         width: 50vw;
-        height: 92vh;
+        height: 100vh;
         background: #23232e;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-evenly;
         transform: translateX(100%);
         transition: transform 0.3s ease-in;
     }

@@ -1,3 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&display=swap');
 .text-content{
-    height: 114vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.text-content-div{
+    width: 50%;
+    text-align: center;
+}
+
+.text-content-div p{
+    color: #fff;
+    font-family: "Pacifico";
+    font-size: clamp(1.75em, 3vw, 7.5em);
+}
+
+.teste-posicionamento{
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.teste-posicionamento-container_texto{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding-left: 30px;
+    width: 35%;
+}
+
+.teste-posicionamento-container_texto h3{
+    font-size: 280%;
+    margin-bottom: 30px;
+    color: #23232e;
+    font-family: "Pacifico";
+}
+
+.teste-posicionamento-container_texto p{
+    font-size: 150%;
+    color: #23232e;
+    font-family: "Pacifico";
+}
+
+.forma-retrato{
+    height: 50vh;
+    width: 50vw;
+}
+
+.anuncio-servicos{
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.container-anuncio-servicos{
+    font-family: "Pacifico";
+    font-size: 300%;
+    color: #23232e;
+    text-align: center;
+}
+
+.container-nome-marcas{
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+   
+    .text-content-div p{
+        color: #fff;
+        font-family: "Pacifico";
+        font-size: 3vw;
+    }
+
+    .teste-posicionamento{
+        margin-top: 10%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .teste-posicionamento-container_texto{
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        padding-left: 30px;
+        width: 40%;
+    }
+
+    .teste-posicionamento-container_texto h3{
+        font-size: 220%;
+        margin-bottom: 20px;
+        color: #23232e;
+        font-family: "Pacifico";
+    }
+    
+    .teste-posicionamento-container_texto p{
+        font-size: 2.091vw;
+        color: #23232e;
+        font-family: "Pacifico";
+    }
+
+    .forma-retrato{
+        height: 40vh;
+        width: 40vw;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .anuncio-servicos{
+        margin-top: 15px;
+    }
+
+    .text-content-div p{
+        color: #fff;
+        font-family: "Pacifico";
+        font-size: 4vw;
+    }
+
+    .teste-posicionamento{
+        margin-top: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+    }
+
+    .teste-posicionamento-container_texto{
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        padding-left: 30px;
+        padding-right: 30px;
+        width: 90%;
+    }
+
+    .teste-posicionamento-container_texto h3{
+        font-size: 180%;
+        margin-bottom: 30px;
+        color: #23232e;
+        font-family: "Pacifico";
+        text-align: center;
+    }
+    
+    .teste-posicionamento-container_texto p{
+        font-size: 4vw;
+        color: #23232e;
+        font-family: "Pacifico";
+    }
+
+    .forma-retrato{
+        height: 50vh;
+        width: 50vw;
+    }
+
+    .container-anuncio-servicos{
+        font-family: "Pacifico";
+        font-size: 200%;
+        color: #23232e;
+        text-align: center;
+    }
 }

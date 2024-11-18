@@ -1,0 +1,194 @@
+.container-cardslider{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.container-cardslider h3{
+    font-family: "Pacifico";
+    color: #23232e;
+    font-size: 400%;
+    margin-bottom: 100px;
+}
+
+.slidecard-content{
+    margin: 0 40px;
+    width: 100%;
+}
+
+.card-wrapper{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.card{
+    width: 300px;
+    border-radius: 25px;
+    background-color: #fff;
+}
+
+.image-content, 
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+    
+}
+
+.image-content{
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+}
+
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #23232e;
+    border-radius: 25px 25px 0 25px;
+    
+}
+
+.overlay::before,
+.overlay::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #23232e;
+    
+}
+
+.overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: #fff;
+    
+}
+
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 3px;
+    
+}
+
+.card-image .card-img{
+    height: 95%;
+    width: 95%;
+    object-fit: cover;
+    border-radius: 50%;
+    border:4px solid #23232e;
+    
+}
+
+.name{
+    font-size: 18px;
+    font-weight: 500;
+    color: #23232e;
+}
+
+.description{
+    margin-top: 15px;
+    font-size: 14px;
+    color: #23232e;
+    text-align: center;
+}
+
+.button{
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 8px 16px;
+    background-color: #23232e;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover{
+    background: #FFD43B;
+    
+}
+
+@media (max-width: 768px) {
+    .card-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+    .container-cardslider h3{
+        font-family: "Pacifico";
+        color: #23232e;
+        font-size: 300%;
+        margin-bottom: 100px;
+    }
+
+    .card{
+        width: 250px;
+        border-radius: 25px;
+        background-color: #fff;
+        margin-bottom: 30px;
+    }
+
+    .card-image{
+        position: relative;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background: #fff;
+        padding: 3px;
+        
+    }
+
+    .card-image .card-img{
+        height: 92%;
+        width: 92%;
+        object-fit: cover;
+        border-radius: 50%;
+        border:4px solid #23232e;
+        
+    }
+
+    .container-cardslider h3{
+        font-family: "Pacifico";
+        color: #23232e;
+        font-size: 200%;
+        margin-bottom: 50px;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px){
+    .card{
+        width: 220px;
+        border-radius: 25px;
+        background-color: #fff;
+    }
+
+    .container-cardslider h3{
+        font-family: "Pacifico";
+        color: #23232e;
+        font-size: 300%;
+        margin-bottom: 100px;
+    }
+}
