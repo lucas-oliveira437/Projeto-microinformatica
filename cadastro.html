@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/imagens/patinha coração.png" type="image/x-icon" sizes="32px">
-    <link rel="stylesheet" href="/css/galeria/header.css">
+    <link rel="stylesheet" href="/css/standard/menu.css">
     <link rel="stylesheet" href="/css/standard/footer.css">
-    <link rel="stylesheet" href="/css/cadastro/style.css"> 
+    <link rel="stylesheet" href="/css/cadastro/style.css">
     <!-- CSS já vinculado aqui -->
 
     <title>MiAu - Spa de Patinhas | Cadastro</title>
-    <!-- Página da Luciana -->  
+    <!-- Página da Luciana -->
 
     <!-- Objetivo: Simular o cadastro de um cliente ou usuário -->
 </head>
+
+<body>
     <!-- Início do cabeçalho -->
     <header>
         <nav class="nav-header">
@@ -28,16 +31,21 @@
                 <div class="line3"></div>
             </div>
             <ul class="nav-list">
-                <li><i class="fa-solid fa-address-card fa-2xl" style="color: #FFD43B;"></i><a href="/sobrenos.html">Sobre</a></li>
+                <li><i class="fa-solid fa-address-card fa-2xl" style="color: #FFD43B;"></i><a
+                        href="/sobrenos.html">Sobre</a></li>
                 <li><i class="fa-solid fa-shield-dog fa-2xl" style="color: #FFD43B;"></i><a href="#">Cães</a></li>
                 <li><i class="fa-solid fa-shield-cat fa-2xl" style="color: #FFD43B;"></i><a href="#">Gatos</a></li>
-                <li><i class="fa-solid fa-image fa-2xl" style="color: #FFD43B;"></i><a href="/galeria.html">Galeria</a></li>
-                <li><i class="fa-solid fa-table fa-2xl" style="color: #FFD43B;"></i><a href="/cadastro.html">Cadastro</a></li>
-                <li><i class="fa-solid fa-address-book fa-2xl" style="color: #FFD43B;"></i><a href="/contato.html">Contato</a></li>
+                <li><i class="fa-solid fa-image fa-2xl" style="color: #FFD43B;"></i><a href="/galeria.html">Galeria</a>
+                </li>
+                <li><i class="fa-solid fa-table fa-2xl" style="color: #FFD43B;"></i><a
+                        href="/cadastro.html">Cadastro</a></li>
+                <li><i class="fa-solid fa-address-book fa-2xl" style="color: #FFD43B;"></i><a
+                        href="/contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
-    <body>
+
+
     <!-- Corpo da página -->
     <br><br><br><br>
     <h1>Vamos nos conhecer MiAulhor?</h1>
@@ -45,69 +53,69 @@
 
     <form action="#">
         <label for="fullname">Nome completo:</label><br>
-        <i >Apenas para cadastro, por gentileza, informe seu nome em documento (não será divulgado):</i><br>
-        <input type="text" id="fullname" name="fname" value="Nome completo" size="50px" ><br><br>
+        <i>Apenas para cadastro, por gentileza, informe seu nome em documento (não será divulgado):</i><br>
+        <input type="text" id="fullname" name="fname" placeholder="Nome completo" value="" size="50px"><br><br>
 
         <label for="socialname">Nome social:</label><br>
-        <i >Por gentileza, informe como gostaria de ser chamadx:</i><br>
-        <input type="text" id="socialname" name="fname" value="" size="50px" ><br><br>
+        <i>Por gentileza, informe como gostaria de ser chamadx:</i><br>
+        <input type="text" id="socialname" name="fname" value="" size="50px"><br><br>
 
         <label for="date">Data de nascimento:</label><br>
         <input type="date" id="date" name="data" value=""><br><br>
 
         <label for="gender">Gênero:</label><br>
-        <i >Por gentileza, informe como você se identifica</i><br>
+        <i>Por gentileza, informe como você se identifica</i><br>
         <input type="radio" id="Feminino" name="gender" value="Feminino">
-        <label for="text">Feminino</label><br> 
+        <label for="text">Feminino</label><br>
         <input type="radio" id="Masculino" name="gender" value="Masculino">
-        <label for="text">Masculino</label><br> 
+        <label for="text">Masculino</label><br>
         <input type="radio" id="Neutro" name="gender" value="Neutro">
-        <label for="text">Neutro</label><br> 
+        <label for="text">Neutro</label><br>
         <input type="radio" id="Neutro" name="gender" value="Prefiro não responder">
         <label for="text">Prefiro não responder</label><br>
         <hr>
 
         <label for="email">Email:</label><br>
-        <input type="email" id="email" name="e-mail" value="Digite seu endereço de e-mail" size="50px" ><br><br>
+        <input type="email" id="email" name="e-mail" placeholder="Digite seu endereço de e-mail" value="" size="50px"><br><br>
 
         <label for="email">Confirme seu e-mail:</label><br>
-        <input type="email" id="email" name="e-mail" value="Digite seu endereço de e-mail" size="50px" ><br><br>
-  
+        <input type="email" id="email" name="e-mail" placeholder="Digite seu endereço de e-mail" value="" size="50px"><br><br>
+
         <label for="password">Senha:</label><br>
-        <i >Por gentileza, siga os requisitos à seguir:</i><br>
+        <i>Por gentileza, siga os requisitos à seguir:</i><br>
         <ul>
-            <li >Letra maiúscula</li>
-            <li >Letra minúscula</li>
-            <li >Número</li>
-            <li >Caracter especial ( ! @ # $ . ,)</li>
-            <li >Mínimo de 8 caracteres</li>
+            <li>Letra maiúscula</li>
+            <li>Letra minúscula</li>
+            <li>Número</li>
+            <li>Caracter especial ( ! @ # $ . ,)</li>
+            <li>Mínimo de 8 caracteres</li>
         </ul>
-        <input type="password" id="password" name="passworD" value="Digite sua senha" size="50px" ><br><br>
+        <input type="password" id="password" name="passworD" value="" size="50px"><br><br>
         <hr>
-  
+
         <h3><img src="/imagens/doguinho.png" height="20px"> Agora, a sua localizaCão</h3>
         <label for="ViaCEP">CEP:</label>
-        <input type="cep" id="cep" name="cep" maxlength="8" value="00000-000" size="50px" ><br>
+        <input type="cep" id="cep" name="cep" maxlength="8" placeholder="00000-000" value="" size="50px"><br>
         <input type="button" value="Buscar"><br><br>
 
         <label for="Endereço">Endereço:</label>
-        <input type="endereco" id="endereco" name="endereco" value="Elm Street" size="50px" ><br><br>
+        <input type="endereco" id="endereco" name="endereco" placeholder="Elm Street" value="" size="50px"><br><br>
 
         <label for="Número">Número:</label>
-        <input type="numero" id="numero" name="numero" value="1234" size="50px" ><br><br>
+        <input type="numero" id="numero" name="numero" placeholder="1234" value="" size="50px"><br><br>
 
         <label for="bairro">Bairro:</label>
-        <input type="bairro" id="bairro" name="bairro" value="Vila Boa Vista" size="50px" ><br><br>
+        <input type="bairro" id="bairro" name="bairro" placeholder="Vila Boa Vista" value="" size="50px"><br><br>
 
         <label for="Cidade">Cidade:</label>
-        <input type="cidade" id="cidade" name="cidade" value="Barueri" size="50px" ><br><br>
+        <input type="cidade" id="cidade" name="cidade" placeholder="Barueri" value="" size="50px"><br><br>
 
         <label for="Estado">Estado:</label>
-        <input type="estado" id="estado" name="estado" value="São Paulo" size="50px" ><br><br>
+        <input type="estado" id="estado" name="estado" placeholder="São Paulo" value="" size="50px"><br><br>
 
         <hr>
         <label for="checkbox">Interesses</label>
-        <i >Por gentileza, selecione quais serviços tem interesse em nosso site:</i><br>
+        <i>Por gentileza, selecione quais serviços tem interesse em nosso site:</i><br>
         <input type="checkbox" id="servico1" name="" value="">
         <label for="servico1"> Banho</label>
         <input type="checkbox" id="servico2" name="" value="">
@@ -126,9 +134,9 @@
         <br>
         <input type="submit" value="Submit">
     </form>
-                       
 
-<!--Início do footer-->
+
+    <!--Início do footer-->
     <footer>
         <div id="footer_content">
             <div id="footer_contacts">
@@ -196,12 +204,10 @@
             2024 all rights reserved
         </div>
     </footer>
-<!--Fim do footer-->
-<!--Início dos scripts necessários-->
-    <script src="/scripts/standard/mobile-navbar.js"></script>
-    <script src="https://kit.fontawesome.com/4c85b95dc0.js" crossorigin="anonymous"></script>
-    <script src="/scripts/standard/slider.js"></script>
-<!--Fim dos scripts necessários-->
+    <!--Fim do footer-->
 </body>
-
+<!--Início dos scripts necessários-->
+<script src="/scripts/standard/mobile-navbar.js"></script>
+<script src="https://kit.fontawesome.com/4c85b95dc0.js" crossorigin="anonymous"></script>
+<!--Fim dos scripts necessários-->
 </html>

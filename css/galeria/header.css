@@ -26,6 +26,7 @@ header nav a:hover {
 header{
     width: 100%;
     position: fixed;
+    z-index: 10;
 }
 
 .nav-header {
