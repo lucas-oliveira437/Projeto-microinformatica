@@ -18,7 +18,7 @@ body {
 
 .reviews {
     padding: 40px 0;
-    background: #3cc2e8;
+    background: #F6FF9E;
     color: #111;
     text-align: center;
 }
@@ -52,7 +52,7 @@ body {
 }
 
 .review{
-    background: #8de3fb;
+    background: #f0f29f;
     padding: 30px;
 }
 
@@ -77,6 +77,89 @@ body {
 }
 
 .estrelas{
-    color: #f6ee05;
+    color: #f63105;
     margin-bottom: 20px;
 }
+
+.wrapper {
+    max-width: 576px; /* Largura máxima do formulário */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    width: 100%;
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    text-align: center; /* Centraliza o conteúdo interno */
+    border-radius: .75rem;
+
+}
+
+.wrapper h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    font-size: 2rem;
+    color: #f63105;
+    margin-bottom: 2rem;
+}
+
+.rating .star{
+    cursor: pointer;
+}
+
+.rating .star:hover{
+    transform: scale(1.1);
+}
+
+
+textarea {
+    width: 100%;
+    background: #f0f29f;
+    padding: 1rem;
+    border-radius: .5rem;
+    border-color: #f0f29f;
+    resize: none;
+    margin-bottom: .5rem;
+}
+
+.btn-group {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+.btn-group .btn {
+    padding: .75rem 1rem;
+    border-radius: .5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: .875rem;
+    font-weight: 500;
+}
+
+.btn-group .btn.submit {
+    background: #f63105;
+    color: #ffffff;
+}
+
+.btn-group .btn.submit:hover {
+    background: #ff7152;
+}
+
+.btn-group .btn.cancel {
+    background: #F6FF9E;
+    color: #000000;
+}
+
+.btn-group .btn.cancel:hover {
+    background: #ff7152;
+}
+
+
+
