@@ -94,9 +94,9 @@
         <hr>
 
         <h3><img src="/imagens/doguinho.png" height="20px"> Agora, a sua localizaCão</h3>
-        <label for="ViaCEP">CEP:</label>
-        <input type="cep" id="cep" name="cep" maxlength="8" placeholder="00000-000" value="" size="50px"><br>
-        <input type="button" value="Buscar"><br><br>
+        <label for="cep">CEP:</label>
+        <input type="text" id="cep" name="cep" maxlength="8" placeholder="00000-000" size="50px"><br>
+        <input onclick="buscar()" type="button" value="Buscar"><br><br>
 
         <label for="Endereço">Endereço:</label>
         <input type="endereco" id="endereco" name="endereco" placeholder="Elm Street" value="" size="50px"><br><br>
@@ -210,4 +210,5 @@
 <script src="/scripts/standard/mobile-navbar.js"></script>
 <script src="https://kit.fontawesome.com/4c85b95dc0.js" crossorigin="anonymous"></script>
 <!--Fim dos scripts necessários-->
+<script src="./scripts/cadastro/cadastro.js"></script>
 </html>
