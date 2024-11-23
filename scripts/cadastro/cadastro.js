@@ -1,9 +1,13 @@
 function buscar() {
     const cep = document.getElementById("cep").value;
-    alert(cep);
-    fetch(`https://viacep.com.br/ws/${cep}/json/`).then((response) => {
+    let search = cep.replace("-", "");
+    fetch(`https://viacep.com.br/ws/${search}/json/`).then((response) => {
         response.json().then(data => {
             console.log(data)
+            document.getElementById("endereco").value = data.logradouro;
+            document.getElementById("bairro").value = data.bairro;
+            document.getElementById("cidade").value = data.localidade;
+            document.getElementById("estado").value = data.uf;
         })
     })
 
