@@ -52,36 +52,35 @@
     <h3>Que tal me contar um pouquinho sobre você e seu pet?</h3>
 
     <form action="#">
-        <label for="fullname">Nome completo:</label><br>
+        <fieldset>
+        <legend><b>Dados Pessoais</b></legend>
+        <label for="fullname">Nome completo:</label>
         <i>Apenas para cadastro, por gentileza, informe seu nome em documento (não será divulgado):</i><br>
-        <input type="text" id="fullname" name="fname" placeholder="Nome completo" value="" size="50px"><br><br>
+        <input type="text" id="fullname" name="fname" placeholder="Nome completo" value="" size="50px"><br>
 
-        <label for="socialname">Nome social:</label><br>
+        <label for="socialname">Nome social:</label>
         <i>Por gentileza, informe como gostaria de ser chamadx:</i><br>
-        <input type="text" id="socialname" name="fname" value="" size="50px"><br><br>
+        <input type="text" id="socialname" name="fname" value="" size="50px"><br>
 
-        <label for="date">Data de nascimento:</label><br>
-        <input type="date" id="date" name="data" value=""><br><br>
+        <label for="date">Data de nascimento:</label>
+        <input type="date" id="date" name="data" value=""><br>
 
-        <label for="gender">Gênero:</label><br>
-        <i>Por gentileza, informe como você se identifica</i><br>
-        <input type="radio" id="Feminino" name="gender" value="Feminino">
-        <label for="text">Feminino</label><br>
-        <input type="radio" id="Masculino" name="gender" value="Masculino">
-        <label for="text">Masculino</label><br>
-        <input type="radio" id="Neutro" name="gender" value="Neutro">
-        <label for="text">Neutro</label><br>
-        <input type="radio" id="Neutro" name="gender" value="Prefiro não responder">
-        <label for="text">Prefiro não responder</label><br>
+        <label for="gender">Gênero:</label>
+        <i>Por gentileza, informe como você se identifica</i>
+        
+        <label for="text"><input type="radio" id="Feminino" name="gender" value="Feminino">Feminino </label>
+        <label for="text"><input type="radio" id="Masculino" name="gender" value="Masculino">Masculino</label>
+        <label for="text"><input type="radio" id="Neutro" name="gender" value="Neutro">Neutro</label>
+        <label for="text"><input type="radio" id="Neutro" name="gender" value="Prefiro não responder">Prefiro não responder</label>
         <hr>
 
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="e-mail" placeholder="Digite seu endereço de e-mail" value="" size="50px"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="e-mail" placeholder="Digite seu endereço de e-mail" value="" size="50px">
 
-        <label for="email">Confirme seu e-mail:</label><br>
-        <input type="email" id="email" name="e-mail" placeholder="Digite seu endereço de e-mail" value="" size="50px"><br><br>
+        <label for="email">Confirme seu e-mail:</label>
+        <input type="email" id="email" name="e-mail" placeholder="Digite seu endereço de e-mail" value="" size="50px">
 
-        <label for="password">Senha:</label><br>
+        <label for="password">Senha:</label>
         <i>Por gentileza, siga os requisitos à seguir:</i><br>
         <ul>
             <li>Letra maiúscula</li>
@@ -90,14 +89,17 @@
             <li>Caracter especial ( ! @ # $ . ,)</li>
             <li>Mínimo de 8 caracteres</li>
         </ul>
-        <input type="password" id="password" name="passworD" value="" size="50px"><br><br>
-        <hr>
-
-        <h3><img src="/imagens/doguinho.png" height="20px"> Agora, a sua localizaCão</h3>
-        <label for="ViaCEP">CEP:</label>
-        <input type="cep" id="cep" name="cep" maxlength="8" placeholder="00000-000" value="" size="50px"><br>
-        <input type="button" value="Buscar"><br><br>
-
+        <input type="password" id="password" name="passworD" value="" size="50px"><br>
+        
+        </fieldset>
+        <br>
+        <fieldset>
+        <legend> <b>Endereço</b></legend>
+            <h3><img src="/imagens/doguinho.png" height="30px"> Agora, a sua localizaCão</h3>
+        <label for="cep">CEP:</label>
+        <input type="text" id="cep" name="cep" maxlength="9" placeholder="00000-000" size="50px"><br>
+        <input onclick="buscar()" type="button" value="Buscar"><br><br>
+        
         <label for="Endereço">Endereço:</label>
         <input type="endereco" id="endereco" name="endereco" placeholder="Elm Street" value="" size="50px"><br><br>
 
@@ -112,27 +114,28 @@
 
         <label for="Estado">Estado:</label>
         <input type="estado" id="estado" name="estado" placeholder="São Paulo" value="" size="50px"><br><br>
-
-        <hr>
-        <label for="checkbox">Interesses</label>
+        </fieldset>
+        <fieldset>
+            <legend>Interesses</legend>
+        <label for="checkbox">Gostaria de receber MiAutualizações e novidades sobre:</label>
         <i>Por gentileza, selecione quais serviços tem interesse em nosso site:</i><br>
-        <input type="checkbox" id="servico1" name="" value="">
-        <label for="servico1"> Banho</label>
-        <input type="checkbox" id="servico2" name="" value="">
-        <label for="servico2"> Tosa Higiênica</label>
-        <input type="checkbox" id="servico3" name="" value="">
-        <label for="servico3"> Tosa Completa</label>
-        <input type="checkbox" id="servico4" name="" value="">
-        <label for="servico4"> Hotelzinho</label>
-        <input type="checkbox" id="servico5" name="" value="">
-        <label for="servico5"> Pet Walk</label>
-        <input type="checkbox" id="servico6" name="" value="">
-        <label for="servico6"> Consulta</label>
-        <input type="checkbox" id="servico7" name="" value="">
-        <label for="servico7"> Pet Shop</label>
-        <hr>
+        
+        <label for="servico1"><input type="checkbox" id="servico1" name="" value=""> Banho</label>
+        
+        <label for="servico2"><input type="checkbox" id="servico2" name="" value=""> Tosa Higiênica</label>
+        
+        <label for="servico3"><input type="checkbox" id="servico3" name="" value=""> Tosa Completa</label>
+        
+        <label for="servico4"><input type="checkbox" id="servico4" name="" value=""> Hotelzinho</label>
+        
+        <label for="servico5"><input type="checkbox" id="servico5" name="" value=""> Pet Walk</label>
+        
+        <label for="servico6"><input type="checkbox" id="servico6" name="" value=""> Consulta</label>
+        
+        <label for="servico7"><input type="checkbox" id="servico7" name="" value=""> Pet Shop</label>
+        </fieldset>
         <br>
-        <input type="submit" value="Submit">
+        <input style="background-color: darkgoldenrod;" type="submit" value="Submit">
     </form>
 
 
@@ -210,4 +213,5 @@
 <script src="/scripts/standard/mobile-navbar.js"></script>
 <script src="https://kit.fontawesome.com/4c85b95dc0.js" crossorigin="anonymous"></script>
 <!--Fim dos scripts necessários-->
+<script src="./scripts/cadastro/cadastro.js"></script>
 </html>
