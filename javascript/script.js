@@ -21,73 +21,45 @@ function filterGallery(category) {
     });
 }
 
+
 // Modal de Visualização e Navegação
-let currentImageIndex = 0;
-const images = document.querySelectorAll('.gallery-item img');
-
-function openModal(index) {
-    document.getElementById("imageModal").style.display = "block";
-    showImage(index);
-}
-
-function closeModal() {
-    document.getElementById("imageModal").style.display = "none";
-}
-
-function showImage(index) {
-    const modalImage = document.getElementById("modalImage");
-    const modalCaption = document.getElementById("modalCaption");
-
-    // Ajusta o índice da imagem
-    if (index >= images.length) currentImageIndex = 0;
-    else if (index < 0) currentImageIndex = images.length - 1;
-    else currentImageIndex = index;
-
-    // Define a imagem e o texto do modal
-    modalImage.src = images[currentImageIndex].src;
-    modalCaption.textContent = images[currentImageIndex].alt;
-}
-
-function changeImage(step) {
-    showImage(currentImageIndex + step);
-}
-let currentIndex = 0;
-const images2 = document.querySelectorAll(".thumbnail");
-const modal = document.getElementById("modal");
-const modalImage = document.getElementById("modalImage");
-const prevButton = document.getElementById("prev");
-const nextButton = document.getElementById("next");
-const closeButton = document.getElementById("close");
-
-// Quando uma imagem é clicada, abre no modal
-images2.forEach((img, index) => {
-    img.onclick = function() {
-        currentIndex = index;
-        modal.style.display = "block";
-        modalImage.src = img.src;
-    };
-});
-
-// Fechar o modal
-closeButton.onclick = function() {
-    modal.style.display = "none";
-};
-
-// Navegar para a imagem anterior
-prevButton.onclick = function() {
-    currentIndex = (currentIndex === 0) ? images2.length - 1 : currentIndex - 1;
-    modalImage.src = images2[currentIndex].src;
-};
-
-// Navegar para a próxima imagem
-nextButton.onclick = function() {
-    currentIndex = (currentIndex === images2.length - 1) ? 0 : currentIndex + 1;
-    modalImage.src = images2[currentIndex].src;
-};
-
-// Fechar o modal ao clicar fora da imagem
-window.onclick = function(event) {
-    if (event.target === modal) {
-        modal.style.display = "none";
+// Open the Modal
+function openModal() {
+    document.getElementById("myModal").style.display = "block";
+  }
+  
+  // Close the Modal
+  function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+  }
+  
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  // Next/previous controls
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  // Thumbnail image controls
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    var captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
     }
-};
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
