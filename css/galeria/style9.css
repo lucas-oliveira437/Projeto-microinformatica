@@ -170,10 +170,11 @@ html, body {
   }
 
   .mySlides-center {
-    margin-top: 90px;
+    margin-top: 60px;
     display: flex;
     justify-content: center;
     height: 30%;
+    margin-bottom: 5px;
 }
 
   .mySlides img {
