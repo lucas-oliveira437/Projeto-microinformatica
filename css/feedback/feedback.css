@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: "Fira Sans Condensed", sans-serif;
+    box-sizing: border-box;
 }
 
 header {
@@ -82,8 +83,8 @@ body {
 }
 
 .wrapper {
-    max-width: 576px; /* Largura máxima do formulário */
-    margin: 0 auto; /* Centraliza horizontalmente */
+    /*max-width: 576px; /* Largura máxima do formulário */
+   /* margin: 0 auto; /* Centraliza horizontalmente */
     width: 100%;
     padding: 2rem;
     box-shadow: var(--shadow);
@@ -118,7 +119,7 @@ body {
 
 
 textarea {
-    width: 100%;
+    width: 60%;
     background: #f0f29f;
     padding: 1rem;
     border-radius: .5rem;
@@ -130,7 +131,7 @@ textarea {
 .btn-group {
     display: flex;
     gap: .5rem;
-    align-items: center;
+    justify-content: center;
 }
 
 .btn-group .btn {
@@ -162,4 +163,34 @@ textarea {
 }
 
 
+@media (min-width: 769px) and (max-width: 1024px){
+    .col{
+        width: 50%;
+        max-width: 50%;
+    }
 
+    textarea {
+        width: 70%;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+
+    .row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    textarea {
+        width: 90%;
+    }
+
+}
