@@ -31,8 +31,8 @@
 }
 
 .img-redes a {
-    padding-left: 50px;
-    padding-right: 50px;
+    /*padding-left: 20px;
+    padding-right: 20px;*/
 }
 
 .img-redes img {
@@ -226,6 +226,14 @@ button:hover {
         font-size: 100%;
         color: #23232e;
         text-align: center;
+    }
+
+    .container-form-contact {
+        width: 100%;
+    }
+
+    .container-map-section {
+        width: 95%;
     }
 
 }
