@@ -33,8 +33,10 @@
             <ul class="nav-list">
                 <li><i class="fa-solid fa-address-card fa-2xl" style="color: #FFD43B;"></i><a
                         href="/sobrenos.html">Sobre</a></li>
-                        <li><i class="fa-brands fa-product-hunt fa-2xl" style="color: #FFD43B;"></i></i><a href="./Produtos2.html">Produtos</a></li>
-                        <li><i class="fa-solid fa-comment fa-2xl" style="color: #FFD43B;"></i></i><a href="./feedback.html">Feedback</a></li>
+                <li><i class="fa-brands fa-product-hunt fa-2xl" style="color: #FFD43B;"></i></i><a
+                        href="./Produtos2.html">Produtos</a></li>
+                <li><i class="fa-solid fa-comment fa-2xl" style="color: #FFD43B;"></i></i><a
+                        href="./feedback.html">Feedback</a></li>
                 <li><i class="fa-solid fa-image fa-2xl" style="color: #FFD43B;"></i><a href="/galeria.html">Galeria</a>
                 </li>
                 <li><i class="fa-solid fa-table fa-2xl" style="color: #FFD43B;"></i><a
@@ -51,91 +53,105 @@
     <h1>Vamos nos conhecer MiAulhor?</h1>
     <h3>Que tal me contar um pouquinho sobre você e seu pet?</h3>
 
-    <form action="#">
+    <form action=""  >
         <fieldset>
-        <legend><b>Dados Pessoais</b></legend>
-        <label for="fullname">Nome completo:</label>
-        <i>Apenas para cadastro, por gentileza, informe seu nome em documento (não será divulgado):</i><br>
-        <input type="text" id="fullname" name="fname" placeholder="Nome completo" value="" size="50px"><br>
+            <legend><b>Dados Pessoais</b></legend>
+            <label for="fullname">Nome completo:</label>
+            <i>Apenas para cadastro, por gentileza, informe seu nome em documento (não será divulgado):</i><br>
+            <input type="text" id="fullname" name="nome_completo" placeholder="Nome completo" required value="" size="50px"><br>
 
-        <label for="socialname">Nome social:</label>
-        <i>Por gentileza, informe como gostaria de ser chamadx:</i><br>
-        <input type="text" id="socialname" name="fname" value="" size="50px"><br>
+            <label for="socialname">Nome social:</label>
+            <i>Por gentileza, informe como gostaria de ser chamadx:</i><br>
+            <input type="text" id="socialname" name="nome_social" placeholder="Nome social" value="" size="50px"><br>
 
-        <label for="date">Data de nascimento:</label>
-        <input type="date" id="date" name="data" value=""><br>
+            <label for="date">Data de nascimento:</label>
+            <input type="date" id="date" required name="data_nascimento" value=""><br>
 
-        <label for="gender">Gênero:</label>
-        <i>Por gentileza, informe como você se identifica</i>
-        
-        <label for="text"><input type="radio" id="Feminino" name="gender" value="Feminino">Feminino </label>
-        <label for="text"><input type="radio" id="Masculino" name="gender" value="Masculino">Masculino</label>
-        <label for="text"><input type="radio" id="Neutro" name="gender" value="Neutro">Neutro</label>
-        <label for="text"><input type="radio" id="Neutro" name="gender" value="Prefiro não responder">Prefiro não responder</label>
-        <hr>
+            <label for="gender">Gênero:</label>
+            <i>Por gentileza, informe como você se identifica</i>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="e-mail" placeholder="Digite seu endereço de e-mail" value="" size="50px">
+            <label for="text"><input required type="radio" id="feminino" name="genero" value="Feminino">Feminino
+            </label>
+            <label for="text"><input required type="radio" id="masculino" name="genero"
+                    value="Masculino">Masculino</label>
+            <label for="text"><input required type="radio" id="neutro" name="genero" value="Neutro">Neutro</label>
+            <label for="text"><input required type="radio" id="nao_responder" name="genero"
+                    value="Prefiro nao responder">Prefiro não responder</label>
+            <hr>
 
-        <label for="email">Confirme seu e-mail:</label>
-        <input type="email" id="email" name="e-mail" placeholder="Digite seu endereço de e-mail" value="" size="50px">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu endereço de e-mail" required value=""
+                size="50px">
 
-        <label for="password">Senha:</label>
-        <i>Por gentileza, siga os requisitos à seguir:</i><br>
-        <ul>
-            <li>Letra maiúscula</li>
-            <li>Letra minúscula</li>
-            <li>Número</li>
-            <li>Caracter especial ( ! @ # $ . ,)</li>
-            <li>Mínimo de 8 caracteres</li>
-        </ul>
-        <input type="password" id="password" name="passworD" value="" size="50px"><br>
-        
+            <label for="email">Confirme seu e-mail:</label>
+            <input type="email" id="validacao"  placeholder="Digite seu endereço de e-mail" required value=""
+                size="50px">
+            <label for="password">Senha:</label>
+            <input type="password" id="password" placeholder="Senha" required name="senha"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z 0-9]).{8,}"
+                title="Deve conter pelo menos uma letra minúscula, uma letra maiúscula, um número e deve ter no mínimo 8 caracteres"
+                value="" size="50px"><br>
+            <input type="checkbox" onclick="mostraSenha()">Mostrar senha
+            <div id="message">
+
+                <i>Por gentileza, siga os requisitos à seguir:</i><br>
+                <p id="letter" class="invalid">Uma <b>letra minúscula</b></p>
+                <p id="capital" class="invalid">Uma <b>letra maiúscula</b> </p>
+                <p id="number" class="invalid">Um <b>número</b></p>
+                <p id="caractere" class="invalid">Um <b>caractere especial ex: ! @ # $</b></p>
+                <p id="length" class="invalid">No mínimo <b>8 caracteres</b></p>
+            </div>
         </fieldset>
         <br>
         <fieldset>
-        <legend> <b>Endereço</b></legend>
+            <legend> <b>Endereço</b></legend>
             <h3><img src="/imagens/doguinho.png" height="30px"> Agora, a sua localizaCão</h3>
-        <label for="cep">CEP:</label>
-        <input type="text" id="cep" name="cep" maxlength="9" placeholder="00000-000" size="50px"><br>
-        <input onclick="buscar()" type="button" value="Buscar"><br><br>
-        
-        <label for="Endereço">Endereço:</label>
-        <input type="endereco" id="endereco" name="endereco" placeholder="Elm Street" value="" size="50px"><br><br>
+            <label id="linha" for="cep">CEP:</label>
+            <div class="input-cep">
+                <input type="text" id="cep" required name="cep" maxlength="9" placeholder="00000-000" size="50px"><br>
+                <input onclick="buscar()" type="button" value="Buscar"><br><br>
+            </div>
 
-        <label for="Número">Número:</label>
-        <input type="numero" id="numero" name="numero" placeholder="1234" value="" size="50px"><br><br>
+            <label for="Endereço">Endereço:</label>
+            <input type="text" id="endereco" required name="logradouro" placeholder="Logradouro ex: Rua" value=""
+                size="50px"><br><br>
 
-        <label for="bairro">Bairro:</label>
-        <input type="bairro" id="bairro" name="bairro" placeholder="Vila Boa Vista" value="" size="50px"><br><br>
+            <label for="Número">Número:</label>
+            <input type="text" id="numero" name="numero" required placeholder="1234" value="" size="50px"><br><br>
 
-        <label for="Cidade">Cidade:</label>
-        <input type="cidade" id="cidade" name="cidade" placeholder="Barueri" value="" size="50px"><br><br>
+            <label for="bairro">Bairro:</label>
+            <input type="text" id="bairro" name="bairro" required placeholder="Vila Boa Vista" value=""
+                size="50px"><br><br>
 
-        <label for="Estado">Estado:</label>
-        <input type="estado" id="estado" name="estado" placeholder="São Paulo" value="" size="50px"><br><br>
+            <label for="Cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" required placeholder="Barueri" value="" size="50px"><br><br>
+
+            <label for="Estado">Estado:</label>
+            <input type="text" id="estado" name="estado" required placeholder="São Paulo" value="" size="50px"><br><br>
         </fieldset>
         <fieldset>
-            <legend>Interesses</legend>
-        <label for="checkbox">Gostaria de receber MiAutualizações e novidades sobre:</label>
-        <i>Por gentileza, selecione quais serviços tem interesse em nosso site:</i><br>
-        
-        <label for="servico1"><input type="checkbox" id="servico1" name="" value=""> Banho</label>
-        
-        <label for="servico2"><input type="checkbox" id="servico2" name="" value=""> Tosa Higiênica</label>
-        
-        <label for="servico3"><input type="checkbox" id="servico3" name="" value=""> Tosa Completa</label>
-        
-        <label for="servico4"><input type="checkbox" id="servico4" name="" value=""> Hotelzinho</label>
-        
-        <label for="servico5"><input type="checkbox" id="servico5" name="" value=""> Pet Walk</label>
-        
-        <label for="servico6"><input type="checkbox" id="servico6" name="" value=""> Consulta</label>
-        
-        <label for="servico7"><input type="checkbox" id="servico7" name="" value=""> Pet Shop</label>
+            <legend><b>Interesses</b></legend>
+            <label for="checkbox">Gostaria de receber MiAutualizações e novidades sobre:</label>
+            <i>Por gentileza, selecione um dos serviços que tenha interesse em nosso site:</i><br>
+
+            <label for="servico1"><input type="radio" id="servico1" name="interesse" value="Banho"> Banho</label>
+
+            <label for="servico2"><input type="radio" id="servico2" name="interesse" value="Tosa Higiênica"> Tosa Higiênica</label>
+
+            <label for="servico3"><input type="radio" id="servico3" name="interesse" value="Tosa Completa"> Tosa Completa</label>
+
+            <label for="servico4"><input type="radio" id="servico4" name="interesse" value="Hotelzinho"> Hotelzinho</label>
+
+            <label for="servico5"><input type="radio" id="servico5" name="interesse" value="Pet Walk"> Pet Walk</label>
+
+            <label for="servico6"><input type="radio" id="servico6" name="interesse" value="Consulta"> Consulta</label>
+
+            <label for="servico7"><input type="radio" id="servico7" name="interesse" value="Pet Shop"> Pet Shop</label>
         </fieldset>
         <br>
-        <input style="background-color: darkgoldenrod;" type="submit" value="Submit">
+        <div id="alinhaBtn">
+            <button type="submit" value="Submit" >Enviar</button>
+        </div>
     </form>
 
 
@@ -147,13 +163,13 @@
                 <p>Spa de patinhas.</p>
 
                 <div id="footer_social_media">
-                    <a href="" class="footer-link" id="instagram">
+                    <a href="https://www.instagram.com" target="_blank" class="footer-link" id="instagram">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
-                    <a href="" class="footer-link" id="facebook">
+                    <a href="https://www.facebook.com" target="_blank" class="footer-link" id="facebook">
                         <i class="fa-brands fa-facebook-f"></i>
                     </a>
-                    <a href="" class="footer-link" id="whatsapp">
+                    <a href="https://wa.me/5511934824915" target="_blank" class="footer-link" id="whatsapp">
                         <i class="fa-brands fa-whatsapp"></i>
                     </a>
                 </div>
@@ -213,6 +229,5 @@
 <script src="/scripts/standard/mobile-navbar.js"></script>
 <script src="https://kit.fontawesome.com/4c85b95dc0.js" crossorigin="anonymous"></script>
 <!--Fim dos scripts necessários-->
-<script src="./scripts/cadastro/cadastro.js"></script>
 <script src="./scripts/cadastro/cadastro.js"></script>
 </html>
